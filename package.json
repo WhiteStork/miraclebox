@@ -1,0 +1,30 @@
+{
+  "name": "mircalebox",
+  "version": "1.0.0",
+  "description": "Miracle Box.",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/whitestork/mircalebox.git"
+  },
+  "author": "ajstevens",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/whitestork/miracleboxissues"
+  },
+  "dependencies": {
+    "body-parser": "^1.15.0",
+    "config": "^1.20.4",
+    "csv": "^1.1.1",
+    "ejs": "^2.4.2",
+    "express": "^4.15.3",
+    "mongojs": "^2.4.0",
+    "request": "^2.72.0"
+  },
+  "homepage": "https://github.com/whitestork/mircalebox#readme",
+  "devDependencies": {}
+}
