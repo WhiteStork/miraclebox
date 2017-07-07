@@ -12,22 +12,16 @@ const
 
 var app = express();
 app.set('port', process.env.PORT || 5000);
-
-
-
-
 /*
  * Use your own validation token. Check that the token used in the Webhook
  * setup is the same token used here.
  *
  */
-app.get('/', function(req, res) {
+app.use(express.static(__dirname + '/public'));
 
-  res.status(200).json({
-        message: 'Miracle Box'
-    });
-    console.log("Log a request: " + req);
-});
+ app.get('/', function(request, response) {
+   response.render('index')
+ });
 
 
 // Start server
