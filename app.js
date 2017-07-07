@@ -21,7 +21,7 @@ app.set('port', process.env.PORT || 5000);
  * setup is the same token used here.
  *
  */
-app.get('/token', function(req, res) {
+app.get('/', function(req, res) {
 
   res.status(200).json({
         message: 'Miracle Box'
